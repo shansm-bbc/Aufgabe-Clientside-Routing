@@ -5,6 +5,7 @@ import "./index.css";
 import App from "./App.jsx";
 import ChronicleListRoute from "./routes/ChronicleListRoute";
 import ChronicleDetailRoute from "./routes/ChronicleDetailRoute";
+import ChronicleEditRoute from "./routes/ChronicleEditRoute";
 
 const router = createBrowserRouter([
   {
@@ -18,6 +19,10 @@ const router = createBrowserRouter([
       {
         path: "/chronicles/:id",
         element: <ChronicleDetailRoute />,
+      },
+      {
+        path: "/chronicles/:id/edit",
+        element: <ChronicleEditRoute />,
       },
     ],
   },

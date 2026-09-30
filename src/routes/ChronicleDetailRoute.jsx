@@ -12,6 +12,7 @@ export default function ChronicleDetailRoute() {
     <main>
       <h2>Deteil einer Chronik: {params.id}</h2>
       <Link to={"/"}>Chroniken Übersicht</Link>
+      <Link to={`/chronicles/${params.id}/edit`}>Bearbeiten</Link>
       <div>
         <Button onClick={handleClick}>Zurück in 5 Sekunden</Button>
       </div>
